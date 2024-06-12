@@ -2,13 +2,13 @@ import tkinter as tk
 from tkinter import messagebox
 import random
 
-# List of words for the game
+# List of words
 word_list = ["apple", "banana", "cherry", "date", "fig", "grape", "kiwi"]
 word = random.choice(word_list)
 guessed = ["_"] * len(word)
 attempts = 6
 
-# Initialize the main window
+# Create the main window
 root = tk.Tk()
 root.title("Hangman Game")
 
@@ -71,7 +71,7 @@ def reset_game():
     attempts = 6
     update_display()
 
-# Create the UI elements
+# Create the UI 
 lbl_word = tk.Label(root, text=" ".join(guessed), font=('Helvetica', 18))
 lbl_word.pack()
 
